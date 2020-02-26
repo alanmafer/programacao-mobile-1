@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-02-25T18:28:10-06:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">Desenvolvimento mobile</title><author><name>Chauã Queirolo</name></author><entry><title type="html">Aula 01</title><link href="http://0.0.0.0:4000/2020/02/19/aula01.html" rel="alternate" type="text/html" title="Aula 01" /><published>2020-02-19T00:00:00-06:00</published><updated>2020-02-19T00:00:00-06:00</updated><id>http://0.0.0.0:4000/2020/02/19/aula01</id><content type="html" xml:base="http://0.0.0.0:4000/2020/02/19/aula01.html">&lt;h1 id=&quot;conceitos-de-programação-mobile&quot;&gt;Conceitos de programação mobile&lt;/h1&gt;
+
+&lt;p&gt;Existem diversas diferenças entre a programação para dispositivos móveis e a programação tradicional para computadores&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Estas diferenças podem ser agrupadas nas seguintes categorias:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Design de interfaces e usabilidade&lt;/strong&gt;: os desafios com interfaces de usuários incluem as maneiras diferentes de receber as entradas de dados e produzir as saídas esperadas, como lidar com tamanhos pequenos de telas focando na responsividade e interações sensíveis ao contexto.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cooperação entre dispositivos&lt;/strong&gt;: as aplicações para dispositivos móveis geralmente são parte de uma solução para múltiplos dispositivos. A aplicação pode ser front-end para um servidor, um servidor para outro dispositivo, um servidor remoto ou um nó em uma solução de processamento distribuído.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Problemas de hardware&lt;/strong&gt;: do ponto de vista do programador, os problemas de hardware incluem a manipulação de diferentes sensores, monitoramento do uso de energia e limitações de memória e rede.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Manipulação de dados&lt;/strong&gt;: o armazenamento em dispositivos móveis não segue sempre o modelo tradicional de sistema de arquivos. Os dados podem ser armazenados em arquivos específicos da aplicação, arquivos de preferências, bancos de dados locais e/ou remotos em um ou mais servidores.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Interação entre aplicações&lt;/strong&gt;: os aplicativos para dispositivos móveis são desenhados para interagirem entre si sempre que possível. Por exemplo, um aplicativo para localização de restaurantes pode utilizar um aplicativo de mapas para exibir a localização do alvo.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Problemas de programação&lt;/strong&gt;: os problemas de programação incluem o ciclo de vida de uma aplicação, desenhar o aplicativo para múltiplas plataformas, segurança, privacidade, teste e depuração.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;design-de-interfaces-e-usabilidade&quot;&gt;Design de interfaces e usabilidade&lt;/h2&gt;
+
+&lt;p&gt;Provavelmente a maior diferença entre a programação para dispositivos móveis e a programação para computadores é a interface do usuário. A tarefa do programador é tornar a interface fácil de entender e de usar. Os principais desafios são:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Telas pequenas&lt;/li&gt;
+  &lt;li&gt;Mudança de orientação&lt;/li&gt;
+  &lt;li&gt;Variedade de sensores&lt;/li&gt;
+  &lt;li&gt;Entrada por toque de tela&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Uma tela pequena limita quantos componentes podem ser exibidos de cada vez. Por outro lado os textos precisam ser grandes o suficiente para que os usuários consigam ler. Os atuadores (botões, sliders, etc) precisam ser grandes o suficiente para que o usuário consiga usar com precisão. Várias técnicas são utilizadas para fazer o melhor uso da falta de espaço: (1) ícones possuem informações adicionadas neles, e (2) rótulos dos campos de texto ocupam o mesmo espaço no qual a informação deve ser entrada. A ideia de usar vários itens de informação ao mesmo tempo é importante para o uso eficiente do espaço.&lt;/p&gt;
+
+&lt;p&gt;Outra estratégia é quebrar a aplicação em diversas páginas. Tanto Android quanto iOS fornecem mecanismos de navegação para combinar diversas páginas. Estes componentes incluem:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tab-Bars: permitem alternar para diferentes telas.&lt;/li&gt;
+  &lt;li&gt;Navigation-Bars: permitem navegar pelas telas de maneira hierárquica.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A mudança de orientação de retrato para paisagem, e vice-versa, oferece outro desafio. Os componentes de layout devem se ajustar para corresponder a mudança de orientação. Os dispositivos móveis possuem tipicamente uma tela retangular. Por exemplo, o um Samsung S10 possui uma tela de 1440 x 3040 pixels e um iPhone X possui uma tela de 2436 x 1125 pixels. As aplicações nestes dispositivos podem ser visualizadas tanto como retrato quanto paisagem. A tarefa do desenvolvedor é garantir que o layout esteja apropriado para as duas orientações, sendo às vezes necessário criar um layout customizado para cada orientação.&lt;/p&gt;
+
+&lt;p&gt;A entrada de texto em dispositivos pequenos pode ser cansativa quando realizadas com um ou dois dedos, e quando muitas teclas precisam ser digitadas (por exemplo, mudar de teclado, pressionar shift, mudar de teclado, pressionar caractere). Algumas estratégias que podem ser empregadas para simplificar esta tarefa são:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Antecipar o que o usuário quer digitar e sugerir a palavra.&lt;/li&gt;
+  &lt;li&gt;Oferecer métodos de atalho para entrada.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Atualmente, os dispositivos móveis possuem mais maneiras de entrada do usuário do que as aplicações para computador. Os modos de entrada para dispositivos móveis incluem: toque, balançar, mudança de orientação, entrada de texto, entrada por voz, localização, câmera e utilização de botões físicos. O desenvolvedor de interfaces precisa escolher adequadamente quais métodos de entrada serão utilizados.&lt;/p&gt;
+
+&lt;p&gt;Outro conceito importante é a sensibilidade do contexto. A sensibilidade do contexto se refere a aplicações que mudam seu modo de funcionamento com base no contexto no qual está inserido. Alguns exemplos de contexto são:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Localização&lt;/li&gt;
+  &lt;li&gt;Movimento&lt;/li&gt;
+  &lt;li&gt;Luz ambiente&lt;/li&gt;
+  &lt;li&gt;Ruído do ambiente&lt;/li&gt;
+  &lt;li&gt;Tipo de entrada&lt;/li&gt;
+  &lt;li&gt;Hora do dia&lt;/li&gt;
+  &lt;li&gt;Usuário&lt;/li&gt;
+  &lt;li&gt;Informações de bio-sensores&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;O aplicativo Waze&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; utiliza a informação da localização para decidir qual mapa utilizar e o movimento (ou falta dele) para determinar quando exibir condições de alerta. O Safari, no iPhone, exibe uma tecla ‘.com’ no teclado quando um campo espera uma URL.&lt;/p&gt;
+
+&lt;h2 id=&quot;cooperação-entre-dispositivos&quot;&gt;Cooperação entre dispositivos&lt;/h2&gt;
+
+&lt;p&gt;Aplicativos para dispositivos móveis são normalmente apenas uma parte de uma solução, possivelmente se comunicando com um servidor remoto, sensores ou atuadores. Muitas aplicações fazem o papel de cliente em uma arquitetura cliente-servidor, sendo a interface com o usuário de um serviço localizado em um servidor remoto. Por exemplo, a API do Google Maps fornece dados de mapa para o aplicativo Google Maps além de outras aplicações.&lt;/p&gt;
+
+&lt;p&gt;Algumas aplicações trabalham de maneira cooperativa com outras cópias delas em outros dispositivos. Por exemplo, jogos que se comunicam diretamente entre dispositivos usando Bluetooth. Os dispositivos podem também trabalhar de maneira cooperativa oferecendo um serviço, como por exemplo, processamento distribuído em diversos dispositivos.&lt;/p&gt;
+
+&lt;p&gt;Outras aplicações podem interagir com dispositivos remotos para adquirir informações. A aquisição de informações pode vir de sensores que enviam os dados  registrados para o dispositivo móvel processar. Por exemplo, o Nike Fuel captura as informações de exercícios e envia para o dispositivo móvel por Bluetooth para se processado e armazenado. Os dispositivos móveis podem também usar Bluetooth ou Wi-Fi para controlar dispositivos externos como televisores, brinquedos e automação de casas.&lt;/p&gt;
+
+&lt;p&gt;As aplicações podem também combinar estas atividades. Por exemplo, uma aplicação pode capturar informações de sensores e transmitir para um servidor remoto para processamento ou usar a informação para tomada de decisão no controle de outros dispositivos.&lt;/p&gt;
+
+&lt;h2 id=&quot;problemas-de-hardware&quot;&gt;Problemas de hardware&lt;/h2&gt;
+
+&lt;p&gt;A programação para dispositivos móveis possui algumas preocupações com relação ao hardware, tais como:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Entrada de sensores&lt;/li&gt;
+  &lt;li&gt;Limite do consumo de energia&lt;/li&gt;
+  &lt;li&gt;Limitações de memória&lt;/li&gt;
+  &lt;li&gt;Limitações de rede&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Os desenvolvedores precisam conhecer estas limitações e suas variações em diferentes dispositivos. Além disso, é necessário conhecer quais sensores estão disponíveis e quais podem ser utilizados. A utilização dos sensores também não se resume apenas a leitura dos valores, sendo necessário interpretar o seu significado. Por exemplo:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Quanto movimento é necessário para realizar a operação de &lt;em&gt;swipe&lt;/em&gt;?&lt;/li&gt;
+  &lt;li&gt;Quanto de inclinação é acidental e quantos graus são significativos para mudança de orientação?&lt;/li&gt;
+  &lt;li&gt;Qual é a precisão do GPS para decidir se o dispositivo se locomoveu ou não?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Outra preocupação é referente a conservação de bateria. Os desenvolvedores precisam criar aplicações que minimizem o consumo de energia. Por exemplo, Wi-Fi consome cerca de 7 vezes mais energia que o Bluetooth. Com isso, os desenvolvedores precisam compreender as consequências do consumo de energia nas escolhas de programação.&lt;/p&gt;
+
+&lt;p&gt;Comparado com computadores, os dispositivos móveis tem limitações de memória e armazenamento. Os desenvolvedores precisam considerar estas limitações na criação dos aplicativos. Por exemplo, quando uma aplicação precisa de mais memória para a tarefa corrente, o sistema operacional pode pegar de volta a memória usada por tarefas pausadas. Este gerenciamento de memória pode afetar a responsividade da tarefa atual bem como diminuir a performance ao mudar de volta para a tarefa pausada.&lt;/p&gt;
+
+&lt;p&gt;Outra preocupação é com relação a conexão de rede. Um dispositivo móvel pode mudar a conexão de rede de internet móvel para Wi-Fi a medida que o dispositivo muda de localização. A largura de banda da rede pode variar bastante entre estas duas tecnologias. Além disso, os dispositivos podem sofrem de conexão intermitente de rede. Por este motivo, as aplicações precisam estar preparadas para realizar cache, gerenciamento de estados e mecanismos de acesso a dados remotos em redes intermitentes.&lt;/p&gt;
+
+&lt;h2 id=&quot;manipulação-de-dados&quot;&gt;Manipulação de dados&lt;/h2&gt;
+
+&lt;p&gt;Nos computadores, os dados são normalmente armazenados em arquivos disponíveis para todos os programas que tenhas as permissões apropriadas. Nos dispositivos móveis, os dados podem estar armazenados em:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Arquivos específicos da aplicação&lt;/li&gt;
+  &lt;li&gt;Arquivos de preferências do sistema&lt;/li&gt;
+  &lt;li&gt;Bancos de dados da aplicação&lt;/li&gt;
+  &lt;li&gt;Servidores remotos de armazenamento&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Por padrão, arquivos e bancos de dados locais usados por uma aplicação não são acessíveis por outras. Isto precisa ser levado em consideração quando houver a necessidade de compartilhamento de informações entre aplicações.
+As informações também podem ser armazenadas em servidores remotos ou na nuvem. Nestes casos é importante analisar as vantagens e desvantagens entre usar os dados local ou remotamente.&lt;/p&gt;
+
+&lt;h2 id=&quot;interação-entre-aplicações&quot;&gt;Interação entre aplicações&lt;/h2&gt;
+
+&lt;p&gt;Nos computadores é comum a interação entre aplicações. Por exemplo, nos sistemas Unix é possível encadear as saídas de um processo como entrada de outro com a utilização de pipes. A vantagem desta abordagem é a reutilização de funcionalidades sem precisar que elas sejam rescritas.&lt;/p&gt;
+
+&lt;p&gt;Nos dispositivos móveis existem estratégias similares. O URL Scheme no iOS e as Intents no Android permitem que uma aplicação utilize outra aplicação para oferecer um serviço ou continuar a interação com o usuário. Por exemplo, uma aplicação que utilize GPS para pegar a localização do dispositivo pode repassar ela para uma aplicação de visualização de mapas.&lt;/p&gt;
+
+&lt;h2 id=&quot;problemas-de-programação&quot;&gt;Problemas de programação&lt;/h2&gt;
+
+&lt;p&gt;Os problemas de programação entre dispositivos móveis e computadores são diferentes. Estes problemas incluem:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;desenvolvimento multi-plataforma&lt;/li&gt;
+  &lt;li&gt;atenção ao ciclo de vida da aplicação&lt;/li&gt;
+  &lt;li&gt;variações entre plataformas&lt;/li&gt;
+  &lt;li&gt;testes&lt;/li&gt;
+  &lt;li&gt;segurança&lt;/li&gt;
+  &lt;li&gt;depuração&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;O desenvolvimento multi-plataforma adiciona mais complexidade no desenvolvimento robusto de software. Os problemas que adicionam complexidade incluem o projeto de software para várias plataformas, teste e depuração. Algumas questões:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Como garantir que a aplicação vai funcionar em vários dispositivos com tamanhos de telas diferentes, versões de sistemas operacionais diferentes, e localizações diferentes?&lt;/li&gt;
+  &lt;li&gt;Como testar comportamento de localização para uma grande variedade de locais e  tipos de locais diferentes (interior, exterior, montanhas, prédios altos, etc)?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Nos computadores uma aplicação sempre está em execução a menos que seja finalizada (ou termine por causa de um erro). Os usuários esperam que as aplicações continuem de onde estavam. Estas aplicações não precisam estar cientes das outras em execução no mesmo computador. Nos dispositivos móveis, as aplicações precisam estar sensíveis a outras ações no mesmo dispositivo. Por exemplo, uma aplicação pode ser interrompida por uma chamada telefônica, por outra aplicação ou com o desligamento do dispositivo.&lt;/p&gt;
+
+&lt;p&gt;Estas interrupções podem fazer com que a aplicação seja finalizada. Neste momento a aplicação precisa se preparar para salvar o seu estado, pois os usuários sempre esperam continuar o uso de onde haviam parado. Por este motivo, o desenvolvedor precisa estar ciente do ciclo de vida das aplicações para saber quando agir em cada caso.&lt;/p&gt;
+
+&lt;p&gt;Com relação a segurança, os desenvolvedores precisam estar atentos quanto ao uso de informações de localização e outros dados pessoais.&lt;/p&gt;
+
+&lt;h2 id=&quot;newspaper-resumo&quot;&gt;:newspaper: Resumo&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&gt;Slides - Aula 01&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;pencil-atividades&quot;&gt;:pencil: Atividades&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Encontre exemplos de aplicativos com:
+    &lt;ol&gt;
+      &lt;li&gt;Interfaces mal projetadas para telas pequenas&lt;/li&gt;
+      &lt;li&gt;Interfaces mal projetadas para mudança de orientação&lt;/li&gt;
+      &lt;li&gt;Interfaces mal projetadas para tablets&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Encontre exemplos de aplicativos que:
+    &lt;ol&gt;
+      &lt;li&gt;realizem interações com outros dispositivos&lt;/li&gt;
+      &lt;li&gt;realizem interações com outros aplicativos&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Pesquise os tipos de armazenamento de dados disponíveis no Android.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Pesquise maneiras de como resolver ou evitar os seguintes problemas de hardware:
+    &lt;ol&gt;
+      &lt;li&gt;Alto consumo de energia&lt;/li&gt;
+      &lt;li&gt;Alto consumo de memória&lt;/li&gt;
+      &lt;li&gt;Alto consumo de internet móvel&lt;/li&gt;
+      &lt;li&gt;Problemas de conectividade de internet&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;books-referências-bibliográficas&quot;&gt;:books: Referências bibliográficas&lt;/h2&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;GORDON, A. &lt;strong&gt;Concepts for mobile programming&lt;/strong&gt;. *Intl. Proc. on ITiCSE. p. 58–63. 2013. &lt;a href=&quot;https://dl.acm.org/doi/pdf/10.1145/2462476.2462483&quot;&gt;link&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;Waze - &lt;a href=&quot;https://www.waze.com/&quot;&gt;https://www.waze.com/&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Chauã Queirolo</name></author><summary type="html">Conceitos de programação mobile</summary></entry><entry><title type="html">Aula 00</title><link href="http://0.0.0.0:4000/2020/02/17/aula00.html" rel="alternate" type="text/html" title="Aula 00" /><published>2020-02-17T00:00:00-06:00</published><updated>2020-02-17T00:00:00-06:00</updated><id>http://0.0.0.0:4000/2020/02/17/aula00</id><content type="html" xml:base="http://0.0.0.0:4000/2020/02/17/aula00.html">&lt;h1 id=&quot;apresentação-da-disciplina&quot;&gt;Apresentação da disciplina&lt;/h1&gt;
+
+&lt;h2 id=&quot;closed_book-ementa&quot;&gt;:closed_book: Ementa&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Características dos dispositivos móveis.&lt;/li&gt;
+  &lt;li&gt;Arquiteturas de aplicação móvel.&lt;/li&gt;
+  &lt;li&gt;Infraestrutura móvel.&lt;/li&gt;
+  &lt;li&gt;Projeto de interfaces para dispositivos móveis.&lt;/li&gt;
+  &lt;li&gt;Programação de aplicações para clientes móveis.&lt;/li&gt;
+  &lt;li&gt;Transferência de dados cliente-servidor.&lt;/li&gt;
+  &lt;li&gt;Prática em desenvolvimento de aplicações móveis.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;blue_book-competências-e-habilidades&quot;&gt;:blue_book: Competências e habilidades&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Conteúdos Conceituais&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Conhecer os principais conceitos e componentes de aplicações para dispositivos móveis.&lt;/li&gt;
+      &lt;li&gt;Conhecer o processo de construção de uma aplicação móvel.&lt;/li&gt;
+      &lt;li&gt;Conhecer sobre persistência de dados em dispositivos móveis.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Conteúdos Procedimentais&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Produzir programas usando interface gráfica (&lt;em&gt;Graphical User Interface&lt;/em&gt; – GUI).&lt;/li&gt;
+      &lt;li&gt;Desenvolver aplicações móveis utilizando uma linguagem de programação.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Conteúdos Atitudinais&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Identificar, avaliar e selecionar estratégias e metodologias a serem aplicadas no desenvolvimento de aplicações para dispositivos móveis.&lt;/li&gt;
+      &lt;li&gt;Ter autonomia para análise e solução de problemas no desenvolvimento de aplicações para dispositivos móveis.&lt;/li&gt;
+      &lt;li&gt;Praticar trabalhos colaborativos em sala ou nos laboratórios de informática.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;orange_book-temas-de-estudo&quot;&gt;:orange_book: Temas de estudo&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Revisão Orientação a Objetos
+    &lt;ul&gt;
+      &lt;li&gt;Conceitos de programação&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Conceitos básicos de programação mobile
+    &lt;ul&gt;
+      &lt;li&gt;Design de interfaces e usabilidade&lt;/li&gt;
+      &lt;li&gt;Cooperação entre dispositivos&lt;/li&gt;
+      &lt;li&gt;Problemas de hardware&lt;/li&gt;
+      &lt;li&gt;Manipulação de dados&lt;/li&gt;
+      &lt;li&gt;Interação entre aplicações&lt;/li&gt;
+      &lt;li&gt;Problemas de programação&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Desenvolvimento Android
+    &lt;ul&gt;
+      &lt;li&gt;História e características da plataforma Android&lt;/li&gt;
+      &lt;li&gt;Introdução Android Studio&lt;/li&gt;
+      &lt;li&gt;Estrutura de um projeto Android&lt;/li&gt;
+      &lt;li&gt;Criação de Layouts&lt;/li&gt;
+      &lt;li&gt;Programação Kotlin e Java&lt;/li&gt;
+      &lt;li&gt;Utilização de componentes&lt;/li&gt;
+      &lt;li&gt;Criação de Activities e Intents&lt;/li&gt;
+      &lt;li&gt;Padrões de projeto:
+        &lt;ul&gt;
+          &lt;li&gt;MVP (Model View Presenter)&lt;/li&gt;
+          &lt;li&gt;MVVM (Model View View-Model)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Criação de Fragmentos&lt;/li&gt;
+      &lt;li&gt;Webservices&lt;/li&gt;
+      &lt;li&gt;Persistência de dados&lt;/li&gt;
+      &lt;li&gt;Notificações&lt;/li&gt;
+      &lt;li&gt;Utilização de geolocalização&lt;/li&gt;
+      &lt;li&gt;Publicação de aplicativos na loja&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;green_book-avaliações&quot;&gt;:green_book: Avaliações&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1o bimestre
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Prova.....: 15/04 | 70%&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Trabalhos.: 15/04 | 30%&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;2o bimestre
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Prova.....: 10/06 | 70%&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Trabalhos.: 17/06 | 30%&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;2a chamada
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Prova.....: 22/06&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Exame final
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Prova.....: 29/06&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;books-referências-bibliográficas&quot;&gt;:books: Referências bibliográficas&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;SILVA, Diego. &lt;strong&gt;Desenvolvimento para Dispositivos Móveis&lt;/strong&gt;. Editora Pearson, 1 Ed. São Paulo, 2017.&lt;/li&gt;
+  &lt;li&gt;DEITEL, Paul J. &lt;strong&gt;Android 6 para programadores uma abordagem baseada em aplicativos&lt;/strong&gt;. 3. São Paulo Bookman 2016.&lt;/li&gt;
+  &lt;li&gt;DEITEL, Harvey M. &lt;strong&gt;Android como programar&lt;/strong&gt;. 2. Porto Alegre Bookman 2015.&lt;/li&gt;
+  &lt;li&gt;DEITEL, H; DEITEL, P.; DEITEL, A., &lt;strong&gt;Java: Como Programar&lt;/strong&gt;. Pearson. 8ª edição. 2010&lt;/li&gt;
+  &lt;li&gt;SINTES, Anthony. &lt;strong&gt;Aprenda Programação Orientada a Objetos em 21 dias&lt;/strong&gt;. Pearson.&lt;/li&gt;
+  &lt;li&gt;GRIFFTS, D. &lt;strong&gt;Android: Use a cabeça&lt;/strong&gt;. O’reilly. 2a. edição. 2013&lt;/li&gt;
+  &lt;li&gt;LEE, V.; SCHNEIDER, H.; SCHELL, R. &lt;strong&gt;Aplicações móveis: arquitetura, projeto e desenvolvimento&lt;/strong&gt;. Pearson, Makron Books, 1 Ed. 2005.&lt;/li&gt;
+  &lt;li&gt;ANDROID DEVELOPERS: &lt;a href=&quot;https://developer.android.com/training/index.html?hl=pt-br&quot;&gt;https://developer.android.com/training/index.html?hl=pt-br&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Chauã Queirolo</name></author><summary type="html">Apresentação da disciplina</summary></entry></feed>

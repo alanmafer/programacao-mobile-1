@@ -1,0 +1,50 @@
+# ---------------------
+# General configuration
+# ---------------------
+
+# Título da página
+title:          Desenvolvimento mobile
+
+# Notas sobre o autor
+author:
+    name:       Chauã Queirolo
+    website:    http://github.com/chaua/programacao-mobile
+
+# Base da URL - usado para o github
+#baseurl:        "https://chaua.github.io/programacao-mobile"
+
+# Esquema de cores 
+color_class:        "teal darken-4"
+color_primary:      "#004d40"
+color_secondary:    "#00695c"
+color_accent:       "#43a047"
+
+# ---------------------
+# Build settings
+# ---------------------
+
+markdown: kramdown
+
+plugins:
+    - jekyll-feed
+#    - jekyll-seo-tag
+#    - jekyll-scholar
+#    - jekyll-youtube
+    - jemoji
+    - premonition
+
+exclude:
+    - README.md
+    - node_modules
+    - package.json
+    - package-lock.json
+    - Gemfile
+    - Gemfile.lock
+
+sass:
+    style:          compressed
+
+#scholar:
+#    bibliography:   referencias.bib
+#    style:          ieee-with-url  
+

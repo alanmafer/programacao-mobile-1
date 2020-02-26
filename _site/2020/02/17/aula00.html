@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Desenvolvimento mobile | Aula 00</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/assets/css/materialize.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/page.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+    </script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> 
+
+    <!-- TODO
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https://shawnteoh.github.io/matjek/feed.xml">
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="https://shawnteoh.github.io/matjek/sitemap.xml">
+    -->
+
+</head>
+
+    <body>
+        <!-- .............................................................. -->
+<!-- HEADER ....................................................... -->
+<!-- .............................................................. -->
+<header>
+
+    <!-- Barra superior -->
+    <nav class="top-nav teal darken-4">
+        <div class="nav-wrapper">
+            <div class="container">    
+                <a class="page-title" href="#">Desenvolvimento mobile</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Botão de menu -->
+    <div class="container">
+        <a href="#" data-activates="slide-out" class="button-collapse top-nav full hide-on-large-only">
+            <i class="material-icons">menu</i>
+        </a>
+    </div>
+
+    <!-- Menu lateral -->
+    <ul id="slide-out" class="side-nav fixed" style="transform: translateX(0px);">
+        <li>
+            <div class="userView">
+                <div class="background"></div>
+                <img class="circle z-depth-2" src="/assets/img/logo.png">
+            <span class="white-text name">Desenvolvimento mobile</span>
+            <span class="white-text email"></span>
+            </div>
+        </li>
+
+        <li>
+            <a class="waves-effect" href="/">
+                <i class="material-icons">home</i>Home
+            </a>
+        </li>
+        <li>
+            <a class="waves-effect" href="/aulas">
+                <i class="material-icons">description</i>Aulas
+            </a>
+        </li>
+        <!--
+            <li>
+            <a class="waves-effect" href="/projetos">
+            <i class="material-icons">laptop_mac</i>Projetos
+            </a>
+            </li>
+        -->
+            <li>
+            <a class="waves-effect" href="/trabalhos">
+            <i class="material-icons">assignment</i>Trabalhos
+            </a>
+            </li>
+        <li>
+            <a class="waves-effect" href="/referencias">
+                <i class="material-icons">book</i>Referências bibliográficas
+            </a>
+        </li>
+
+        <li><div class="divider"></div></li>
+        <li>
+            <a class="waves-effect" href="http://github.com/chaua/programacao-mobile">
+                <i class="material-icons">person</i>Sobre
+            </a>
+        </li>
+        <!--
+            <li>
+            <a class="waves-effect" href="/contato">
+            <i class="material-icons">email</i>Contato
+            </a>
+            </li>
+        -->
+    </ul>
+</header>
+
+        <main>
+        <div class="content container">
+            <br>
+<div class="card">
+    <div class="card-image">
+        
+        <img style="filter: brightness(90%);object-fit: cover;" height="150px" src="/assets/img/header.png">
+        
+        <span class="card-title">Aula 00</span>
+    </div>    
+    <div class="card-content">
+        <h1 id="apresentação-da-disciplina">Apresentação da disciplina</h1>
+
+<h2 id="closed_book-ementa">
+<img class="emoji" title=":closed_book:" alt=":closed_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d5.png" height="20" width="20"> Ementa</h2>
+
+<ul>
+  <li>Características dos dispositivos móveis.</li>
+  <li>Arquiteturas de aplicação móvel.</li>
+  <li>Infraestrutura móvel.</li>
+  <li>Projeto de interfaces para dispositivos móveis.</li>
+  <li>Programação de aplicações para clientes móveis.</li>
+  <li>Transferência de dados cliente-servidor.</li>
+  <li>Prática em desenvolvimento de aplicações móveis.</li>
+</ul>
+
+<h2 id="blue_book-competências-e-habilidades">
+<img class="emoji" title=":blue_book:" alt=":blue_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d8.png" height="20" width="20"> Competências e habilidades</h2>
+
+<ul>
+  <li>
+<strong>Conteúdos Conceituais</strong>
+    <ul>
+      <li>Conhecer os principais conceitos e componentes de aplicações para dispositivos móveis.</li>
+      <li>Conhecer o processo de construção de uma aplicação móvel.</li>
+      <li>Conhecer sobre persistência de dados em dispositivos móveis.</li>
+    </ul>
+  </li>
+  <li>
+<strong>Conteúdos Procedimentais</strong>
+    <ul>
+      <li>Produzir programas usando interface gráfica (<em>Graphical User Interface</em> – GUI).</li>
+      <li>Desenvolver aplicações móveis utilizando uma linguagem de programação.</li>
+    </ul>
+  </li>
+  <li>
+<strong>Conteúdos Atitudinais</strong>
+    <ul>
+      <li>Identificar, avaliar e selecionar estratégias e metodologias a serem aplicadas no desenvolvimento de aplicações para dispositivos móveis.</li>
+      <li>Ter autonomia para análise e solução de problemas no desenvolvimento de aplicações para dispositivos móveis.</li>
+      <li>Praticar trabalhos colaborativos em sala ou nos laboratórios de informática.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="orange_book-temas-de-estudo">
+<img class="emoji" title=":orange_book:" alt=":orange_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d9.png" height="20" width="20"> Temas de estudo</h2>
+
+<ul>
+  <li>Revisão Orientação a Objetos
+    <ul>
+      <li>Conceitos de programação</li>
+    </ul>
+  </li>
+  <li>Conceitos básicos de programação mobile
+    <ul>
+      <li>Design de interfaces e usabilidade</li>
+      <li>Cooperação entre dispositivos</li>
+      <li>Problemas de hardware</li>
+      <li>Manipulação de dados</li>
+      <li>Interação entre aplicações</li>
+      <li>Problemas de programação</li>
+    </ul>
+  </li>
+  <li>Desenvolvimento Android
+    <ul>
+      <li>História e características da plataforma Android</li>
+      <li>Introdução Android Studio</li>
+      <li>Estrutura de um projeto Android</li>
+      <li>Criação de Layouts</li>
+      <li>Programação Kotlin e Java</li>
+      <li>Utilização de componentes</li>
+      <li>Criação de Activities e Intents</li>
+      <li>Padrões de projeto:
+        <ul>
+          <li>MVP (Model View Presenter)</li>
+          <li>MVVM (Model View View-Model)</li>
+        </ul>
+      </li>
+      <li>Criação de Fragmentos</li>
+      <li>Webservices</li>
+      <li>Persistência de dados</li>
+      <li>Notificações</li>
+      <li>Utilização de geolocalização</li>
+      <li>Publicação de aplicativos na loja</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="green_book-avaliações">
+<img class="emoji" title=":green_book:" alt=":green_book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d7.png" height="20" width="20"> Avaliações</h2>
+
+<ul>
+  <li>1o bimestre
+    <ul>
+      <li><code class="highlighter-rouge">Prova.....: 15/04 | 70%</code></li>
+      <li><code class="highlighter-rouge">Trabalhos.: 15/04 | 30%</code></li>
+    </ul>
+  </li>
+  <li>2o bimestre
+    <ul>
+      <li><code class="highlighter-rouge">Prova.....: 10/06 | 70%</code></li>
+      <li><code class="highlighter-rouge">Trabalhos.: 17/06 | 30%</code></li>
+    </ul>
+  </li>
+  <li>2a chamada
+    <ul>
+      <li><code class="highlighter-rouge">Prova.....: 22/06</code></li>
+    </ul>
+  </li>
+  <li>Exame final
+    <ul>
+      <li><code class="highlighter-rouge">Prova.....: 29/06</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="books-referências-bibliográficas">
+<img class="emoji" title=":books:" alt=":books:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4da.png" height="20" width="20"> Referências bibliográficas</h2>
+
+<ul>
+  <li>SILVA, Diego. <strong>Desenvolvimento para Dispositivos Móveis</strong>. Editora Pearson, 1 Ed. São Paulo, 2017.</li>
+  <li>DEITEL, Paul J. <strong>Android 6 para programadores uma abordagem baseada em aplicativos</strong>. 3. São Paulo Bookman 2016.</li>
+  <li>DEITEL, Harvey M. <strong>Android como programar</strong>. 2. Porto Alegre Bookman 2015.</li>
+  <li>DEITEL, H; DEITEL, P.; DEITEL, A., <strong>Java: Como Programar</strong>. Pearson. 8ª edição. 2010</li>
+  <li>SINTES, Anthony. <strong>Aprenda Programação Orientada a Objetos em 21 dias</strong>. Pearson.</li>
+  <li>GRIFFTS, D. <strong>Android: Use a cabeça</strong>. O’reilly. 2a. edição. 2013</li>
+  <li>LEE, V.; SCHNEIDER, H.; SCHELL, R. <strong>Aplicações móveis: arquitetura, projeto e desenvolvimento</strong>. Pearson, Makron Books, 1 Ed. 2005.</li>
+  <li>ANDROID DEVELOPERS: <a href="https://developer.android.com/training/index.html?hl=pt-br">https://developer.android.com/training/index.html?hl=pt-br</a>
+</li>
+</ul>
+
+
+    </div>
+        <div class="card-action">
+             
+            <a href=""></a>
+            
+
+            
+            <a class="right" href="/2020/02/19/aula01.html">Aula 01<i style="vertical-align:middle;margin-bottom:3px;" class="material-icons">chevron_right</i></a>
+            
+        </div>
+
+</div>
+
+
+        </div>
+        </main>
+        <!-- .............................................................. -->
+<!-- FOOTER ....................................................... -->
+<!-- .............................................................. -->
+<footer class="page-footer teal darken-4">
+    <!-- Copyright -->
+    <div class="footer-copyright">
+        <div class="container">
+            <div class="col s6 push-s6">Copyright © 2020 <!--Chauã Queirolo-->
+</div>
+        </div>
+    </div>
+</footer>
+
+        <!-- .............................................................. -->
+<!-- SCRIPTS ...................................................... -->
+<!-- .............................................................. -->
+
+<script src="/assets/js/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="/assets/js/materialize.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+<div class="hiddendiv common"></div>
+<div class="drag-target" data-sidenav="slide-out" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
+<!--div id="sidenav-overlay" style="opacity: 1;" class=""></div-->
+
+    </body>
+</html>
