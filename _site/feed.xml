@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-02-25T18:28:10-06:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">Desenvolvimento mobile</title><author><name>Chauã Queirolo</name></author><entry><title type="html">Aula 01</title><link href="http://0.0.0.0:4000/2020/02/19/aula01.html" rel="alternate" type="text/html" title="Aula 01" /><published>2020-02-19T00:00:00-06:00</published><updated>2020-02-19T00:00:00-06:00</updated><id>http://0.0.0.0:4000/2020/02/19/aula01</id><content type="html" xml:base="http://0.0.0.0:4000/2020/02/19/aula01.html">&lt;h1 id=&quot;conceitos-de-programação-mobile&quot;&gt;Conceitos de programação mobile&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-02-25T18:31:01-06:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">Desenvolvimento mobile</title><author><name>Chauã Queirolo</name></author><entry><title type="html">Aula 01</title><link href="http://0.0.0.0:4000/2020/02/19/aula01.html" rel="alternate" type="text/html" title="Aula 01" /><published>2020-02-19T00:00:00-06:00</published><updated>2020-02-19T00:00:00-06:00</updated><id>http://0.0.0.0:4000/2020/02/19/aula01</id><content type="html" xml:base="http://0.0.0.0:4000/2020/02/19/aula01.html">&lt;h1 id=&quot;conceitos-de-programação-mobile&quot;&gt;Conceitos de programação mobile&lt;/h1&gt;
 
 &lt;p&gt;Existem diversas diferenças entre a programação para dispositivos móveis e a programação tradicional para computadores&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Estas diferenças podem ser agrupadas nas seguintes categorias:&lt;/p&gt;
 
@@ -141,7 +141,7 @@ As informações também podem ser armazenadas em servidores remotos ou na nuvem
 &lt;h2 id=&quot;newspaper-resumo&quot;&gt;:newspaper: Resumo&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;&quot;&gt;Slides - Aula 01&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/chaua/programacao-mobile/blob/master/Aulas/Aula01%20-%20Conceitos%20b%C3%A1sicos.pdf&quot;&gt;Slides - Aula 01&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;pencil-atividades&quot;&gt;:pencil: Atividades&lt;/h2&gt;
