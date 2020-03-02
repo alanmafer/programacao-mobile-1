@@ -69,4 +69,4 @@ fastlane/readme.md
 .DS_Store
 .vendor
 
-_sites/*
+_site/*
