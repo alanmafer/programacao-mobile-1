@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-02-25T18:31:01-06:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">Desenvolvimento mobile</title><author><name>Chauã Queirolo</name></author><entry><title type="html">Aula 01</title><link href="http://0.0.0.0:4000/2020/02/19/aula01.html" rel="alternate" type="text/html" title="Aula 01" /><published>2020-02-19T00:00:00-06:00</published><updated>2020-02-19T00:00:00-06:00</updated><id>http://0.0.0.0:4000/2020/02/19/aula01</id><content type="html" xml:base="http://0.0.0.0:4000/2020/02/19/aula01.html">&lt;h1 id=&quot;conceitos-de-programação-mobile&quot;&gt;Conceitos de programação mobile&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2020-03-01T15:30:28-06:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">Desenvolvimento mobile</title><author><name>Chauã Queirolo</name></author><entry><title type="html">Aula 01</title><link href="http://0.0.0.0:4000/2020/02/19/aula01.html" rel="alternate" type="text/html" title="Aula 01" /><published>2020-02-19T00:00:00-06:00</published><updated>2020-02-19T00:00:00-06:00</updated><id>http://0.0.0.0:4000/2020/02/19/aula01</id><content type="html" xml:base="http://0.0.0.0:4000/2020/02/19/aula01.html">&lt;h1 id=&quot;conceitos-de-programação-mobile&quot;&gt;Conceitos de programação mobile&lt;/h1&gt;
 
 &lt;p&gt;Existem diversas diferenças entre a programação para dispositivos móveis e a programação tradicional para computadores&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Estas diferenças podem ser agrupadas nas seguintes categorias:&lt;/p&gt;
 
@@ -149,15 +149,15 @@ As informações também podem ser armazenadas em servidores remotos ou na nuvem
 &lt;ol&gt;
   &lt;li&gt;Encontre exemplos de aplicativos com:
     &lt;ol&gt;
-      &lt;li&gt;Interfaces mal projetadas para telas pequenas&lt;/li&gt;
-      &lt;li&gt;Interfaces mal projetadas para mudança de orientação&lt;/li&gt;
-      &lt;li&gt;Interfaces mal projetadas para tablets&lt;/li&gt;
+      &lt;li&gt;Interfaces mal projetadas para telas pequenas.&lt;/li&gt;
+      &lt;li&gt;Interfaces mal projetadas para mudança de orientação.&lt;/li&gt;
+      &lt;li&gt;Interfaces mal projetadas para tablets.&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
   &lt;li&gt;Encontre exemplos de aplicativos que:
     &lt;ol&gt;
-      &lt;li&gt;realizem interações com outros dispositivos&lt;/li&gt;
-      &lt;li&gt;realizem interações com outros aplicativos&lt;/li&gt;
+      &lt;li&gt;Realizem interações com outros dispositivos.&lt;/li&gt;
+      &lt;li&gt;Realizem interações com outros aplicativos.&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
   &lt;li&gt;
@@ -165,10 +165,10 @@ As informações também podem ser armazenadas em servidores remotos ou na nuvem
   &lt;/li&gt;
   &lt;li&gt;Pesquise maneiras de como resolver ou evitar os seguintes problemas de hardware:
     &lt;ol&gt;
-      &lt;li&gt;Alto consumo de energia&lt;/li&gt;
-      &lt;li&gt;Alto consumo de memória&lt;/li&gt;
-      &lt;li&gt;Alto consumo de internet móvel&lt;/li&gt;
-      &lt;li&gt;Problemas de conectividade de internet&lt;/li&gt;
+      &lt;li&gt;Alto consumo de energia.&lt;/li&gt;
+      &lt;li&gt;Alto consumo de memória.&lt;/li&gt;
+      &lt;li&gt;Alto consumo de internet móvel.&lt;/li&gt;
+      &lt;li&gt;Problemas de conectividade de internet.&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
@@ -178,10 +178,10 @@ As informações também podem ser armazenadas em servidores remotos ou na nuvem
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;GORDON, A. &lt;strong&gt;Concepts for mobile programming&lt;/strong&gt;. *Intl. Proc. on ITiCSE. p. 58–63. 2013. &lt;a href=&quot;https://dl.acm.org/doi/pdf/10.1145/2462476.2462483&quot;&gt;link&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;GORDON, A. &lt;a href=&quot;https://dl.acm.org/doi/pdf/10.1145/2462476.2462483&quot;&gt;&lt;strong&gt;Concepts for mobile programming&lt;/strong&gt;&lt;/a&gt;. &lt;em&gt;Intl. Proc. on ITiCSE&lt;/em&gt;. p. 58–63. 2013. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;Waze - &lt;a href=&quot;https://www.waze.com/&quot;&gt;https://www.waze.com/&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Waze: &lt;a href=&quot;https://www.waze.com/&quot;&gt;https://www.waze.com/&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</content><author><name>Chauã Queirolo</name></author><summary type="html">Conceitos de programação mobile</summary></entry><entry><title type="html">Aula 00</title><link href="http://0.0.0.0:4000/2020/02/17/aula00.html" rel="alternate" type="text/html" title="Aula 00" /><published>2020-02-17T00:00:00-06:00</published><updated>2020-02-17T00:00:00-06:00</updated><id>http://0.0.0.0:4000/2020/02/17/aula00</id><content type="html" xml:base="http://0.0.0.0:4000/2020/02/17/aula00.html">&lt;h1 id=&quot;apresentação-da-disciplina&quot;&gt;Apresentação da disciplina&lt;/h1&gt;
@@ -304,4 +304,36 @@ As informações também podem ser armazenadas em servidores remotos ou na nuvem
   &lt;li&gt;GRIFFTS, D. &lt;strong&gt;Android: Use a cabeça&lt;/strong&gt;. O’reilly. 2a. edição. 2013&lt;/li&gt;
   &lt;li&gt;LEE, V.; SCHNEIDER, H.; SCHELL, R. &lt;strong&gt;Aplicações móveis: arquitetura, projeto e desenvolvimento&lt;/strong&gt;. Pearson, Makron Books, 1 Ed. 2005.&lt;/li&gt;
   &lt;li&gt;ANDROID DEVELOPERS: &lt;a href=&quot;https://developer.android.com/training/index.html?hl=pt-br&quot;&gt;https://developer.android.com/training/index.html?hl=pt-br&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Chauã Queirolo</name></author><summary type="html">Apresentação da disciplina</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Chauã Queirolo</name></author><summary type="html">Apresentação da disciplina</summary></entry><entry><title type="html">Aula 03</title><link href="http://0.0.0.0:4000/2019/03/04/aula03.html" rel="alternate" type="text/html" title="Aula 03" /><published>2019-03-04T00:00:00-06:00</published><updated>2019-03-04T00:00:00-06:00</updated><id>http://0.0.0.0:4000/2019/03/04/aula03</id><content type="html" xml:base="http://0.0.0.0:4000/2019/03/04/aula03.html">&lt;h1 id=&quot;ambiente-de-desenvolvimento&quot;&gt;Ambiente de desenvolvimento&lt;/h1&gt;
+
+&lt;p&gt;Preparação do ambiente de desenvolvimento:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.oracle.com/technetwork/pt/java/javase/downloads/index.html&quot;&gt;Java SDK&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.android.com/studio&quot;&gt;Android Studio&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;newspaper-resumo&quot;&gt;:newspaper: Resumo&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&gt;Slides - Aula 03&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;pencil-atividades&quot;&gt;:pencil: Atividades&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Instalar o Android Studio&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;Configurar o SDK Manager&lt;/li&gt;
+  &lt;li&gt;Criar um novo projeto Android&lt;/li&gt;
+  &lt;li&gt;Executar o projeto no emulador ou em um dispositivo&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;books-referências-bibliográficas&quot;&gt;:books: Referências bibliográficas&lt;/h2&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://developer.android.com/studio/intro&quot;&gt;Android Studio&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Chauã Queirolo</name></author><summary type="html">Ambiente de desenvolvimento</summary></entry></feed>
