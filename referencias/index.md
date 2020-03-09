@@ -20,6 +20,13 @@ layout: page
 - [Como instalar o Android Studio](https://developer.android.com/studio/index.html)
 - [Guia do usuário](https://developer.android.com/studio/intro/index.html)
 
+## Kotlin
+
+- [IntelliJ (IDE)](https://www.jetbrains.com/idea/download)
+- [Playground (online)](https://play.kotlinlang.org/)
+- [Documentação](https://kotlinlang.org/docs/tutorials/)
+- [Tutorial](https://www.programiz.com/kotlin-programming)
+
 ## Material Design
 
 - [Guia de cores](https://material.io/guidelines/style/color.html#)
