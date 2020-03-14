@@ -5,6 +5,8 @@ layout: page
 # Trabalhos
 
 - **1o. bimestre:** 
+    - [**Trabalho 1**:](https://github.com/chaua/programacao-mobile/blob/master/Trabalhos/trabalho-kotlin.pdf) 28/03
+    - **Trabalho 2**:  11/04
 - **2o. bimestre:** 
 
 
@@ -16,3 +18,4 @@ layout: page
 - Criar o arquivo `README.md` com o curso, disciplina, nome do aluno.
 - Criar um diretório para cada projeto com os arquivos para avaliação:
     - `trabalho1`: código-fonte dos exercícios.
+    - `trabalho2`: projeto Android.
