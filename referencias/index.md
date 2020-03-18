@@ -30,3 +30,8 @@ layout: page
 ## Material Design
 
 - [Guia de cores](https://material.io/guidelines/style/color.html#)
+
+## Git
+
+- [Download Git](https://git-scm.com/downloads)
+- [Cheat Sheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf)
